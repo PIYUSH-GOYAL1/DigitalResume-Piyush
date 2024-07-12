@@ -10,7 +10,7 @@ app.set("view engine" , "ejs");
 
 app.get("/" , (req,res)=>{
     try{
-        res.render("index");
+        res.send("index");
     }catch(err){
         res.render("error" , {msg : error});
     }
